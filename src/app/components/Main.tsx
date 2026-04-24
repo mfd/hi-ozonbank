@@ -23,7 +23,7 @@ function Gallery({ images, onImageClick }: GalleryProps) {
               src={image}
             />
           </div>
-          <div className="absolute bg-[rgba(0,0,0,0.02)] inset-[0_-0.12px_-0.13px_0]" />
+          <div className="absolute bg-[rgba(0,0,0,0.02)]" />
         </div>
       ))}
     </div>
@@ -46,6 +46,7 @@ interface CaseItemProps {
   images: string[];
   onImageClick: (images: string[], index: number) => void;
   showBorder?: boolean;
+  showGallery?: boolean;
 }
 
 function CaseItem({
@@ -64,6 +65,7 @@ function CaseItem({
   images,
   onImageClick,
   showBorder = true,
+  showGallery = true,
 }: CaseItemProps) {
   return (
     <div className="flex flex-col gap-[32px] items-start w-[849px]">
@@ -127,7 +129,9 @@ function CaseItem({
         )}
       </div>
 
-      <Gallery images={images} onImageClick={onImageClick} />
+      {showGallery && (
+        <Gallery images={images} onImageClick={onImageClick} />
+      )}
 
       {showBorder && (
         <div className="flex flex-col items-start pb-[40px] pt-[8px] w-full">
@@ -152,7 +156,7 @@ export default function Main() {
 
   return (
     <>
-      <div className="flex flex-col gap-[56px] items-start pr-[98px] w-full">
+      <div className="flex flex-col gap-[40px] items-start pr-[98px] w-full">
         {/* Header */}
         <div className="flex items-start overflow-clip w-full">
           <div className="flex flex-col gap-[16px] items-start leading-[0] not-italic overflow-clip text-[#1f1f1f] w-[849px]">
@@ -164,10 +168,11 @@ export default function Main() {
             <div className="flex flex-col justify-center text-[0px] w-full">
               <p className="text-[20px]">
                 <span className="leading-[32px]">
-                  Меня зовут Камиль, я работаю ведущим
-                  продуктовым дизайнером в Альфа‑Банке, мне
-                  очень близка тема дизайн-систем и разработки,
-                  поэтому хочу откликнуться, на вакансию{" "}
+                  Меня зовут Камиль, я работаю ведущим
+                  продуктовым дизайнером в Альфа‑Банке,
+                  мне очень близка тема дизайн-систем
+                  и разработки, поэтому хочу откликнуться,
+                  на вакансию&nbsp;
                 </span>
                 <span className="leading-[32px] not-italic font-bold">
                   Продуктового дизайнера дизайн-системы

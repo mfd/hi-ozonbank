@@ -16,6 +16,11 @@ export function Lightbox({ images, index, open, onClose }: LightboxProps) {
       close={onClose}
       index={index}
       slides={images.map((src) => ({ src }))}
+      styles={{
+        container: { backgroundColor: "rgba(0, 0, 0, 0.7)" },
+        slide: { maxWidth: "1280px", margin: "0 auto" },
+      }}
+      toolbar={{ style: { padding: "80px" } }}
     />
   );
 }

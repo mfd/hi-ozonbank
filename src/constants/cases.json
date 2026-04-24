@@ -6,8 +6,7 @@
     "prototypeUrl": "https://mfd.github.io/alfaskb-prelogin/#/products",
     "prototypeButtonText": "Прототип витрины предложений",
     "description": "Пример компонентов Button, SliderInput разработанных в рамках развития дизайн‑системы А-kit",
-    "desktopImages": ["imgWrap4", "imgWrap5", "imgWrap7"],
-    "mobileImages": ["imgWrap", "imgWrap1"]
+    "images": ["imgAlfa1", "imgAlfa2", "imgAlfa3"]
   },
   {
     "title": "Siemens AG и Siemens Energy – Темизация платформ",
@@ -15,36 +14,33 @@
     "figmaButtonText": "Figma-файл",
     "goal": "Сделать универсальное решение для двух бренд платформ",
     "solution": "Темизация на стилях и токенах в Figma",
-    "desktopImages": ["imgWrap8", "imgWrap9", "imgWrap6", "imgWrap10"],
-    "mobileImages": ["imgWrap2", "imgWrap3", "imgWrap4", "imgWrap5", "imgWrap10"]
+    "images": ["imgSiemens1", "imgSiemens2", "imgSiemens3", "imgSiemens4"]
   },
   {
     "title": "UI-кит мобильного приложения Озон-Банка с поддержкой light/dark",
     "figmaUrl": "https://www.figma.com/design/jJNyWWibEZlGBoufZG9lEC?node-id=1404-20866",
     "figmaButtonText": "Figma-файл",
     "description": "Собран в рамках участия в конкурсе продуктовых дизайнеров Ozon Design Challenge 2023 (работа попала в финал)",
-    "desktopImages": ["imgOzonBank3", "imgOzonBank6"],
-    "mobileImages": ["imgWrap6", "imgWrap7", "imgWrap8", "imgWrap3", "imgWrap4", "imgWrap9"]
+    "images": ["imgOzon1", "imgOzon2"]
   },
   {
-    "title": "Видео на платформе alfabank.ru",
-    "figmaUrl": "https://www.figma.com/design/jJNyWWibEZlGBoufZG9lEC?node-id=1404-20866",
+    "title": "Видеоанимации на платформе alfabank.ru",
+    "figmaUrl": "https://www.figma.com/design/jJNyWWibEZlGBoufZG9lEC/OZBANK---DS?node-id=1404-20865",
     "figmaButtonText": "Figma-файл",
-    "goal": "Прорисерчить и реализовать решение для публикации видео, решить текущие проблемы и ограничения",
+    "exampleUrl": "https://alfabank.ru/corporate/alfa-boss/",
+    "exampleButtonText": "Пример решения на бою",
+    "goal": "Прорисерчить и реализовать решение для публикации видео, решить текущие проблемы и ограничения (вес файла, поддержка alpha-канала)",
     "solution": "Конвертор и гайды публикации видео на сайте alfabank.ru",
-    "desktopImages": ["imgWrap15", "imgWrap16"],
-    "mobileImages": ["imgWrap3", "imgWrap4", "imgWrap10", "imgWrap2", "imgWrap11", "imgWrap3", "imgWrap4", "imgWrap5", "imgWrap12"]
+    "images": ["imgVideo1", "imgVideo2"],
+    "showGallery": false
   },
   {
     "title": "Text2Layers, плагин для Figma для сборки контентных страниц",
     "githubUrl": "https://github.com/mfd/text2layers",
     "githubButtonText": "Github",
-    "exampleUrl": "#",
-    "exampleButtonText": "Пример работы плагина",
     "goal": "Увеличить Time2Market сборки типовых продуктовых и контентных страниц на сайте alfabank.ru",
     "solution": "Плагин для обработки контента из Google Docs / Microsoft Word в компоненты Figma",
-    "desktopImages": ["imgWrap17"],
-    "mobileImages": ["imgWrap13"],
-    "showBorder": true
+    "images": ["imgPlugin1"],
+    "showBorder": false
   }
 ]

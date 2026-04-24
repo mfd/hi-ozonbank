@@ -46,6 +46,7 @@ interface CaseItemProps {
   images: string[];
   onImageClick: (images: string[], index: number) => void;
   showBorder?: boolean;
+  showGallery?: boolean;
 }
 
 function CaseItem({
@@ -64,6 +65,7 @@ function CaseItem({
   images,
   onImageClick,
   showBorder = true,
+  showGallery = true,
 }: CaseItemProps) {
   return (
     <div className="flex flex-col gap-[32px] items-start w-full">
@@ -127,7 +129,9 @@ function CaseItem({
         )}
       </div>
 
-      <Gallery images={images} onImageClick={onImageClick} />
+      {showGallery && (
+        <Gallery images={images} onImageClick={onImageClick} />
+      )}
 
       {showBorder && (
         <div className="flex flex-col items-start pb-[40px] pt-[8px] w-full">
@@ -164,13 +168,14 @@ export default function MobileMain() {
             <div className="flex flex-col justify-center text-[0px] w-full">
               <p className="text-[20px]">
                 <span className="leading-[32px]">
-                  Меня зовут Камиль, я работаю ведущим
-                  продуктовым дизайнером в Альфа‑Банке, мне
-                  очень близка тема дизайн-систем и разработки,
-                  поэтому хочу откликнуться, на вакансию{" "}
+                  Меня зовут Камиль, я работаю ведущим
+                  продуктовым дизайнером в Альфа‑Банке,
+                  мне очень близка тема дизайн-систем
+                  и разработки, поэтому хочу откликнуться,
+                  на вакансию&nbsp;
                 </span>
                 <span className="leading-[32px] not-italic font-bold">
-                  Продуктового дизайнера дизайн-системы
+                  Продуктового дизайнера дизайн‑системы
                 </span>
               </p>
             </div>

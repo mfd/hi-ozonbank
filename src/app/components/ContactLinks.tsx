@@ -36,7 +36,7 @@ export default function ContactLinks() {
   return (
     <div className="flex flex-col gap-[12px] items-start w-full">
       <ContactItem label="Resume:">
-        <ContactLink href="https://drive.google.com/file/d/1lwLDIsFsPkCB4fV_pA51vrxF_OifP2N4/view?usp=sharing">
+        <ContactLink href="https://drive.google.com/file/d/1lwLDIsFsPkCB4fV_pA51vrxF_OifP2N4/view">
           Download CV
         </ContactLink>
       </ContactItem>

@@ -1,7 +1,7 @@
 
-  # hi-ozon 2026
+  # hi-ozonbank 2026
 
-  This is a code bundle for Create Page from Design. The original project is available at https://www.figma.com/design/HjgwyYzVpsiOHzfiBE9x7u
+  This is a code bundle for Hi-OzonBank. The original project is available at https://www.figma.com/design/HjgwyYzVpsiOHzfiBE9x7u
 
   ## Running the code
 

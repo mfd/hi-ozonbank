@@ -1,10 +1,10 @@
 import { Lightbox, useLightbox } from "./Lightbox";
 import { Button } from "./Button";
-import { desktopCasesData } from "../../constants/cases";
+import { desktopCasesDataSm, desktopCasesDataFull } from "../../constants/cases";
 
 interface GalleryProps {
   images: string[];
-  onImageClick: (images: string[], index: number) => void;
+  onImageClick: (index: number) => void;
 }
 
 function Gallery({ images, onImageClick }: GalleryProps) {
@@ -14,7 +14,7 @@ function Gallery({ images, onImageClick }: GalleryProps) {
         <div
           key={index}
           className="bg-[#f7f7f7] flex flex-col h-[86px] items-start relative shrink-0 w-[153px] cursor-pointer"
-          onClick={() => onImageClick(images, index)}
+          onClick={() => onImageClick(index)}
         >
           <div className="h-full overflow-clip relative w-full">
             <img
@@ -44,7 +44,7 @@ interface CaseItemProps {
   goal?: string;
   solution?: string;
   images: string[];
-  onImageClick: (images: string[], index: number) => void;
+  onImageClick: (index: number) => void;
   showBorder?: boolean;
   showGallery?: boolean;
 }
@@ -91,7 +91,7 @@ function CaseItem({
               </Button>
             )}
             {exampleUrl && (
-              <Button href={exampleUrl} icon="figma">
+              <Button href={exampleUrl} icon="default">
                 {exampleButtonText || "Пример"}
               </Button>
             )}
@@ -130,7 +130,7 @@ function CaseItem({
       </div>
 
       {showGallery && (
-        <Gallery images={images} onImageClick={onImageClick} />
+        <Gallery images={images} onImageClick={(index) => onImageClick(index)} />
       )}
 
       {showBorder && (
@@ -243,11 +243,11 @@ export default function Main() {
             </div>
           </div>
           <div className="flex flex-col items-start w-full">
-            {desktopCasesData.map((caseItem, index) => (
+            {desktopCasesDataSm.map((caseItem, caseIndex) => (
               <CaseItem
-                key={index}
+                key={caseIndex}
                 {...caseItem}
-                onImageClick={openLightbox}
+                onImageClick={(imageIndex) => openLightbox(desktopCasesDataFull[caseIndex].images, imageIndex)}
               />
             ))}
           </div>

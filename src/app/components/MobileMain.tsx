@@ -1,10 +1,10 @@
 import { Lightbox, useLightbox } from "./Lightbox";
 import { Button } from "./Button";
-import { mobileCasesData } from "../../constants/cases";
+import { mobileCasesDataSm, mobileCasesDataFull } from "../../constants/cases";
 
 interface GalleryProps {
   images: string[];
-  onImageClick: (images: string[], index: number) => void;
+  onImageClick: (index: number) => void;
 }
 
 function Gallery({ images, onImageClick }: GalleryProps) {
@@ -14,7 +14,7 @@ function Gallery({ images, onImageClick }: GalleryProps) {
         <div
           key={index}
           className="bg-[#f7f7f7] flex flex-col h-[86px] items-start relative shrink-0 w-[153px] cursor-pointer"
-          onClick={() => onImageClick(images, index)}
+          onClick={() => onImageClick(index)}
         >
           <div className="h-full overflow-clip relative w-full">
             <img
@@ -44,7 +44,7 @@ interface CaseItemProps {
   goal?: string;
   solution?: string;
   images: string[];
-  onImageClick: (images: string[], index: number) => void;
+  onImageClick: (index: number) => void;
   showBorder?: boolean;
   showGallery?: boolean;
 }
@@ -130,7 +130,7 @@ function CaseItem({
       </div>
 
       {showGallery && (
-        <Gallery images={images} onImageClick={onImageClick} />
+        <Gallery images={images} onImageClick={(index) => onImageClick(index)} />
       )}
 
       {showBorder && (
@@ -156,7 +156,7 @@ export default function MobileMain() {
 
   return (
     <>
-      <div className="flex flex-col gap-[48px] items-start w-full pb-[48px]">
+      <div className="flex flex-col gap-[48px] items-start w-full pb-[72px]">
         {/* Header */}
         <div className="flex items-start overflow-clip w-full">
           <div className="flex flex-col gap-[16px] items-start leading-[0] not-italic overflow-clip text-[#1f1f1f] w-full">
@@ -170,7 +170,7 @@ export default function MobileMain() {
                 <span className="leading-[32px]">
                   Меня зовут Камиль, я работаю ведущим
                   продуктовым дизайнером в Альфа‑Банке,
-                  мне очень близка тема дизайн-систем
+                  мне очень близка тема дизайн‑систем
                   и разработки, поэтому хочу откликнуться,
                   на вакансию&nbsp;
                 </span>
@@ -211,19 +211,17 @@ export default function MobileMain() {
                     ограничений. Умею находить баланс между
                     сложностью разработки и бизнес‑целями,
                     аргументируя дизайн-решения данными
-                    аналитики и результатами UX-исследований
+                    аналитики и результатами UX‑исследований
                   </span>
                 </li>
                 <li className="list-disc ms-[30px]">
                   <span className="leading-[32px]">
-                    Люблю автоматизировать воркфлоу и рутину,
-                    пишу скрипты на bash/js
+                    Люблю автоматизировать воркфлоу и рутину, пишу скрипты на bash/js
                   </span>
                 </li>
                 <li className="list-disc ms-[30px]">
                   <span className="leading-[32px]">
-                    Умею работать с кодом и разговариваю с
-                    фронтендами на одном языке (
+                    Умею работать с кодом и разговариваю с фронтендами на одном языке (
                     <a
                       className="cursor-pointer decoration-solid not-italic underline"
                       href="https://learn.javascript.ru/courses/js-20160216-2130/mfd/en/certificate.jpg"
@@ -260,11 +258,11 @@ export default function MobileMain() {
             </div>
           </div>
           <div className="flex flex-col items-start w-full">
-            {mobileCasesData.map((caseItem, index) => (
+            {mobileCasesDataSm.map((caseItem, caseIndex) => (
               <CaseItem
-                key={index}
+                key={caseIndex}
                 {...caseItem}
-                onImageClick={openLightbox}
+                onImageClick={(imageIndex) => openLightbox(mobileCasesDataFull[caseIndex].images, imageIndex)}
               />
             ))}
           </div>

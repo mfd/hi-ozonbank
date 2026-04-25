@@ -1,7 +1,7 @@
 import Main from "./components/Main";
 import MobileMain from "./components/MobileMain";
-import MobileRight from "./components/MobileRight";
-import Right from "../imports/Right/Right";
+import MobileProfile from "./components/MobileProfile";
+import Profile from "./components/Profile";
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
         <div className="flex items-start gap-[24px] relative w-[1140px]">
           <Main />
           <div className="flex flex-col gap-[16px] items-start pb-[32px] sticky top-[72px] w-[267px]">
-            <Right />
+            <Profile />
           </div>
         </div>
       </div>
@@ -20,7 +20,7 @@ export default function App() {
       <div className="lg:hidden bg-white flex flex-col items-start px-[32px] py-[32px] relative min-h-full">
         <div className="flex flex-col items-start relative w-full max-w-[360px] mx-auto">
           <MobileMain />
-          <MobileRight />
+          <MobileProfile />
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import imgAvatar from "../../imports/Mob/51147307bcf1e7209428f0b7ea0183e9f284189a.png";
+import imgAvatar from "../../imports/avatar.png";
 import MobileContactLinks from "./MobileContactLinks";
 
 export default function MobileRight() {
@@ -6,7 +6,7 @@ export default function MobileRight() {
     <div className="bg-white">
       {/* Header with Avatar */}
       <div className="flex gap-[24px] items-center w-full mb-[32px]">
-        <div className="relative rounded-full shrink-0 size-[96px]">
+        <div className="relative rounded-full shrink-0 size-20">
           <img
             alt="Kamil Kashaev"
             className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-full size-full"

@@ -1,5 +1,5 @@
-// Import image mapping
-import { imageMap } from "./casesImg";
+// Import image mappings
+import { imageMapSm, imageMapFull } from "./casesImg";
 
 // Import JSON data
 import casesDataRaw from "./cases.json";
@@ -23,14 +23,26 @@ export interface CaseData {
   showGallery?: boolean;
 }
 
-// Export desktop cases with resolved image paths
-export const desktopCasesData: CaseData[] = casesDataRaw.map((caseItem) => ({
+// Export desktop cases with resolved small image paths for preview
+export const desktopCasesDataSm: CaseData[] = casesDataRaw.map((caseItem) => ({
   ...caseItem,
-  images: caseItem.images.map((imageKey) => imageMap[imageKey]),
+  images: caseItem.images.map((imageKey) => imageMapSm[imageKey]),
 }));
 
-// Export mobile cases with resolved image paths (only first 2 images)
-export const mobileCasesData: CaseData[] = casesDataRaw.map((caseItem) => ({
+// Export desktop cases with resolved full image paths for lightbox
+export const desktopCasesDataFull: CaseData[] = casesDataRaw.map((caseItem) => ({
   ...caseItem,
-  images: caseItem.images.slice(0, 2).map((imageKey) => imageMap[imageKey]),
+  images: caseItem.images.map((imageKey) => imageMapFull[imageKey]),
+}));
+
+// Export mobile cases with resolved small image paths (only first 2 images)
+export const mobileCasesDataSm: CaseData[] = casesDataRaw.map((caseItem) => ({
+  ...caseItem,
+  images: caseItem.images.slice(0, 2).map((imageKey) => imageMapSm[imageKey]),
+}));
+
+// Export mobile cases with resolved full image paths (only first 2 images)
+export const mobileCasesDataFull: CaseData[] = casesDataRaw.map((caseItem) => ({
+  ...caseItem,
+  images: caseItem.images.slice(0, 2).map((imageKey) => imageMapFull[imageKey]),
 }));

@@ -70,7 +70,7 @@ export default function MobileContactLinks() {
         </ContactItem>
         <ContactItem label="Portfolio:">
           <ContactLink href="https://drive.google.com/file/d/1ghRI7AXcYDnfbW4NLPCToPiU8FIJRB67/view">
-            PDF Portfolio
+            Design Portfolio
           </ContactLink>
         </ContactItem>
       </div>

@@ -5,7 +5,7 @@
     "figmaButtonText": "Figma-файл",
     "prototypeUrl": "https://mfd.github.io/alfaskb-prelogin/#/products",
     "prototypeButtonText": "Прототип витрины предложений",
-    "description": "Пример компонентов Button, SliderInput разработанных в рамках развития дизайн‑системы А-kit",
+    "description": "Компоненты Button, SliderInput разработанных мной в рамках развития дизайн‑системы Аkit и пример витрины персонализированных финансовых предложений",
     "images": ["imgAlfa1", "imgAlfa2", "imgAlfa3", "imgAlfa4"]
   },
   {
@@ -30,7 +30,7 @@
     "exampleUrl": "https://alfabank.ru/corporate/alfa-boss/",
     "exampleButtonText": "Пример решения на бою",
     "goal": "Прорисерчить и реализовать решение для публикации видео, решить текущие проблемы и ограничения (вес файла, поддержка alpha-канала)",
-    "solution": "Конвертор и гайды публикации видео на сайте alfabank.ru",
+    "solution": "Конвертер и гайды публикации видео на сайте alfabank.ru",
     "images": ["imgAlfaVideo1", "imgAlfaVideo2", "imgAlfaVideo3"],
     "showGallery": true
   },

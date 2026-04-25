@@ -6,8 +6,9 @@ import imgAlfa2_sm from "../imports/_cases/alfaui2_sm.png";
 import imgAlfa2_full from "../imports/_cases/alfaui2.png";
 import imgAlfa3_sm from "../imports/_cases/alfaui3_sm.png";
 import imgAlfa3_full from "../imports/_cases/alfaui3.png";
-import imgAlfa4_sm from "../imports/_cases/alfaui4_sm.png";
-import imgAlfa4_full from "../imports/_cases/alfaui4.png";
+import imgAlfa4_sm from "../imports/_cases/alfaui4_sm.gif";
+import imgAlfa4_full from "../imports/_cases/alfaui4.mp4";
+import imgAlfa4_poster from "../imports/_cases/alfaui4_poster.png";
 
 // Siemens case
 import imgSiemens1_sm from "../imports/_cases/siem1_sm.png";
@@ -77,4 +78,5 @@ export const imageMapFull: Record<string, string> = {
 // Unified image mapping for video posters
 export const imageMapPoster: Record<string, string> = {
   imgAlfaVideo3: imgAlfaVideo3_poster,
+  imgAlfa4_full: imgAlfa4_poster,
 };

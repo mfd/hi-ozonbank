@@ -5,7 +5,7 @@
     "figmaButtonText": "Figma-файл",
     "prototypeUrl": "https://mfd.github.io/alfaskb-prelogin/#/products",
     "prototypeButtonText": "Прототип витрины предложений",
-    "description": "Компоненты Button, SliderInput разработанных мной в рамках развития дизайн‑системы Аkit и пример витрины персонализированных финансовых предложений",
+    "description": "Компоненты Button, SliderInput разработанных в рамках развития дизайн‑системы Аkit и пример витрины персонализированных финансовых предложений",
     "images": ["imgAlfa1", "imgAlfa2", "imgAlfa3", "imgAlfa4"]
   },
   {
@@ -20,15 +20,13 @@
     "title": "UI-кит мобильного приложения Озон-Банка с поддержкой light/dark",
     "figmaUrl": "https://www.figma.com/design/jJNyWWibEZlGBoufZG9lEC?node-id=1404-20866",
     "figmaButtonText": "Figma-файл",
-    "description": "Собран в рамках участия в конкурсе продуктовых дизайнеров Ozon Design Challenge 2023 (работа попала в финал)",
+    "description": "Собран в рамках участия в конкурсе продуктовых дизайнеров BBE × OzonFintech 2023",
     "images": ["imgOzon1", "imgOzon2"]
   },
   {
     "title": "Видеоанимации на платформе alfabank.ru",
     "figmaUrl": "https://www.figma.com/design/jJNyWWibEZlGBoufZG9lEC/OZBANK---DS?node-id=1404-20865",
     "figmaButtonText": "Figma-файл",
-    "exampleUrl": "https://alfabank.ru/corporate/alfa-boss/",
-    "exampleButtonText": "Пример решения на бою",
     "goal": "Прорисерчить и реализовать решение для публикации видео, решить текущие проблемы и ограничения (вес файла, поддержка alpha-канала)",
     "solution": "Конвертер и гайды публикации видео на сайте alfabank.ru",
     "images": ["imgAlfaVideo1", "imgAlfaVideo2", "imgAlfaVideo3"],
@@ -38,7 +36,7 @@
     "title": "Text2Layers, плагин для Figma для сборки контентных страниц",
     "githubUrl": "https://github.com/mfd/text2layers",
     "githubButtonText": "Github",
-    "goal": "Сократить TimeToMarket сборки типовых продуктовых и рекламных страниц на сайте alfabank.ru",
+    "goal": "Сократить TimeToMarket сборки типовых продуктовых и рекламных страниц на сайте alfabank.ru",
     "solution": "Плагин для обработки контента из Google Docs (Microsoft Word) в компоненты Figma",
     "images": ["imgPlugin1"],
     "showBorder": false
